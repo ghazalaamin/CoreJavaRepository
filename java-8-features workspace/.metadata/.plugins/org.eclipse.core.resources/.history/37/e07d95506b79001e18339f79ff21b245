@@ -1,0 +1,10 @@
+package primitive_program2;
+
+public class A1_CollectEvenAndOddElementsOfArrayTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+E:\Ghazala\2.JAVA\Java-Coding-Workspaces\java-8-features workspace\.metadata\.plugins\org.eclipse.jdt.core
+2342445119.index
+3071709800.index
+2882323119.index
+2643982364.index

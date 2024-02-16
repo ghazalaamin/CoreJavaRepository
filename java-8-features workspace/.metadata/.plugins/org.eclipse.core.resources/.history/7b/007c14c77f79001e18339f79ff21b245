@@ -1,0 +1,13 @@
+package primitive_program2;
+
+import java.util.List;
+
+public class A4_CountingEachStringOfListTest4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> list=List.of("GFG", "Geeks", "for", "GeeksQuiz", "GeeksforGeeks");
+
+	}
+
+}

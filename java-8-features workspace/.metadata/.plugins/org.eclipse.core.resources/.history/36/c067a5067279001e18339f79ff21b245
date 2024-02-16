@@ -1,0 +1,19 @@
+package primitive_program2;
+
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+public class A2_CollectionNumberGreaterThanFGIvenNumberTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List<Integer> array = List.of(3,4,5,6,7,8,9);
+		
+		Optional<Integer> collect = array.stream().collect(Collectors.minBy(Comparator.naturalOrder()));
+		System.out.println(collect);
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.sort;
+
+public class Employee implements Comparable {
+
+	private String stuName;
+	private int stuId;
+	
+	public String getStuName() {
+		return stuName;
+	}
+	public int getStuId() {
+		return stuId;
+	}
+	
+	@Override
+	public String toString() {
+		return "Employee [stuName=" + stuName + ", stuId=" + stuId + "]";
+	}
+	
+	@Override
+	public int compareTo(Object emp) {
+		  
+		return 0;
+	}
+	
+	
+	
+}

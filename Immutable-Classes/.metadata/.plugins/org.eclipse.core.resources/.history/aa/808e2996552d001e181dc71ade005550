@@ -1,0 +1,27 @@
+package com.immutable;
+
+final class Student {
+	final int stutId;
+	final String stuName;
+	
+	
+	public int getStutId() {
+		return stutId;
+	}
+	
+	public String getStuName() {
+		return stuName;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Student [stutId=" + stutId + ", stuName=" + stuName + "]";
+	}
+	
+	public Student(int stutId, String stuName) {
+		super();
+		this.stutId = stutId;
+		this.stuName = stuName;
+	}
+}

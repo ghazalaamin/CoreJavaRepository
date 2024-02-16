@@ -1,0 +1,34 @@
+package com.immutable;
+
+final class Student {
+	final int stutId;
+	final String stuName;
+	final Address address;
+	
+	
+	public Student(int stutId, String stuName, Address address) {
+		super();
+		this.stutId = stutId;
+		this.stuName = stuName;
+		this.address = address;
+	}
+
+	public Address getAddress() {
+		return new Address(address);
+	}
+
+	public int getStutId() {
+		return stutId;
+	}
+	
+	public String getStuName() {
+		return stuName;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Student [stutId=" + stutId + ", stuName=" + stuName + ", address=" + address + "]";
+	}
+	
+}

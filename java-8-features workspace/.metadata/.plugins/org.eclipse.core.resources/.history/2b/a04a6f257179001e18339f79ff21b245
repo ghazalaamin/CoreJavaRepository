@@ -1,0 +1,10 @@
+package primitive_program2;
+
+public class A2_CollectionNumberGreaterThanFGIvenNumberTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+E:\Ghazala\3.JAVA\Java-Coding-Workspaces\AnnonymousClasses\.metadata\.plugins\org.eclipse.jdt.core
+3281718800.index
+3881423017.index

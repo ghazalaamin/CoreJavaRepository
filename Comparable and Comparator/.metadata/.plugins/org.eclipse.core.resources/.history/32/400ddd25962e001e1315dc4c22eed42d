@@ -1,0 +1,53 @@
+package com.sort;
+
+public class Employee implements Comparable<Employee> {
+
+	private String stuName;
+	private int stuId;
+	
+	public String getStuName() {
+		return stuName;
+	}
+	public int getStuId() {
+		return stuId;
+	}
+	
+	public void setStuName(String stuName) {
+		this.stuName = stuName;
+	}
+	public void setStuId(int stuId) {
+		this.stuId = stuId;
+	}
+	
+	
+	public Employee(String stuName, int stuId) {
+		super();
+		this.stuName = stuName;
+		this.stuId = stuId;
+	}
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Employee [stuName=" + stuName + ", stuId=" + stuId + "]";
+	}
+	
+	@Override
+	public int compareTo(Employee emp) {
+		if(this.stuName==emp.getStuName())  
+		      return 0;  
+		   else if(this.stuName>emp.getStuName())  
+		      return 1;  
+		   else  
+		      return -1;  
+	}
+	private String stuName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+}

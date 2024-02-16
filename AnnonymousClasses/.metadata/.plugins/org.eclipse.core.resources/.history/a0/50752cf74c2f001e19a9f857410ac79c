@@ -1,0 +1,5 @@
+package com.annonymous;
+
+public interface AnnonymousInterface {
+
+}

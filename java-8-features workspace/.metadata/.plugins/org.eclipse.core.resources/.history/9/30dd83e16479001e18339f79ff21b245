@@ -1,0 +1,56 @@
+package Program1;
+
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class SortUsingCamparatorTest6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EmployeeHandlingOperation emp = new EmployeeHandlingOperation();
+		List<EmployeeEnity> data = emp.getEmployee();
+
+		//6.sort using camparator
+		
+		 List<EmployeeEnity> collect =
+		 data.stream().sorted((e1,e2)->e2.empId.compareTo(e1.empId)).collect(
+		 Collectors.toList()) ; System.out.println(collect);
+		
+		
+		//7.Display on account department enployee in sorted order
+		/*
+		 * List<EmployeeEnity> collect =
+		 * data.stream().filter(e1->e1.getDeptId().equals("account")).sorted((e1,e2)->e1
+		 * .empId.compareTo(e2.empId)).collect(Collectors.toList()) ;
+		 * System.out.println(collect);
+		 */
+		
+		//Count how many times account is appeared in employee
+		/*
+		 * long count =
+		 * data.stream().filter(e1->e1.getDeptId().equals("account")).count() ;
+		 * System.out.println(count);
+		 */
+		
+		//Display all employee name in sorted order
+		/*
+		 * List<String> collect =
+		 * data.stream().sorted((e1,e2)->e1.empName.compareTo(e2.empName)).map(e1->e1.
+		 * empName).collect(Collectors.toList()); System.out.println(collect);
+		 */
+	       
+	       
+	     //How to store dublictaes in another set
+	      List<Integer> list2= List.of(1,2,3,4,4,5,5,6,6);
+	      Set<Integer> sets= new HashSet<>();
+	      //list2.stream().filter(i ->!sets.add(i)).collect(Collectors.toSet());
+	      System.out.println(list2.stream().filter(i ->!sets.add(i)).collect(Collectors.toSet()));
+	}
+
+}
